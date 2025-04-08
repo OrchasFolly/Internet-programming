@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/style_index.css" /> <!-- Meu arquivo -->
+
+  <title>Detalhes do Candidato</title>
+</head>
+
+<body>
+    <div class="base">
+        <header class="container-fluid webheader">
+            <div class="descH">
+                <div class="return">
+                    <div class="log">
+                        <a class="btn-login-logout-return" href="/index.html">Voltar</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <h1>Cadastrar Candidato</h1>
+                </div>
+            </div>
+        </header>
+
+        <section class="websection">
+            <div class="descForm">
+                <div class="align-margin-form">
+                    <form id="formCandidato" method="POST" action="#" class="form-width needs-validation" novalidate>
+                        <div class="form-group">
+                            <h4>Candidatura</h4>
+                            <label for="numRegister">Número do candidato</label>
+                            <input type="text" class="form-control" id="numRegister" name="numCandValid" value="" required>
+                            <div class="valid-feedback">
+                                OK!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu número!
+                            </div>
+                            
+                            <label for="nameRegister">Nome completo</label>
+                            <input type="text" class="form-control" id="nameRegister" name="nameValid" value="" required>
+                            <div class="valid-feedback">
+                                OK!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu nome completo!
+                            </div>
+
+                            <label for="tituloRegister">Titulo de eleitor</label>
+                            <input type="text" class="form-control" id="tituloRegister" name="tituloValid" value="" required>
+                            <div class="valid-feedback">
+                                OK!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu titulo completo!
+                            </div>
+
+                            <label for="partRegister">Partido</label>
+                            <input type="text" class="form-control" id="partRegister" name="ptdValid" value="" required>
+                            <div class="valid-feedback">
+                                OK!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu partido!
+                            </div>
+
+                            <label for="ufRegister">UF</label>
+                            <input type="text" class="form-control" id="ufRegister" name="ufValid" value="" required>
+                            <div class="valid-feedback">
+                                OK!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe sua UF!
+                            </div>
+
+                            <label for="cidadeRegister">Cidade</label>
+                            <input type="text" class="form-control" id="cidadeRegister" name="cidadeValid" value="" required>
+                            <div class="valid-feedback">
+                                OK!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe sua cidade!
+                            </div>
+
+                            <label for="endRegister">Endereço</label>
+                            <input type="text" class="form-control" id="endRegister" name="endValid" value="" required>
+                            <div class="valid-feedback">
+                                OK!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu endereço completo!
+                            </div>
+
+                            <div class="margin-align">
+                                <div class="btn-align">
+                                    <button type="submit" id="cadastrar" class="btn btn-crud btn-primary" href="#">Cadastrar</button>
+                                    <button type="submit" id="atualizar" class="btn btn-crud btn-warning" href="#" disabled>Editar</button>
+                                    <button type="submit" id="excluir" class="btn btn-crud btn-danger" href="#" disabled>Deletar</button>
+                                </div>
+                                <div class="btn-align-crud">
+                                    <label for="loginName">Encontrar pelo número</label>
+                                    <input type="text" class="form-control" id="numGet" name="numValid" value="">
+                                    <button type="button" class="btn btn-crud btn-primary" onclick="exibindoTabela(document.getElementById('numGet').value)">Encontrar</button>
+                                </div>
+                            </div>
+                            <div id="alert-message"></div>
+                        </div>
+                    </form>
+                    <div class="tabScroll">
+                        <div style="margin: 5px;" id="get-tab"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid webfooter">
+            <div class="descF">
+                <div class="title">
+                    <h3>Detalhes da página</h3>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./Scripts/count.js"></script>
+    <script src="./Scripts/candidato_script.js"></script>
+    <!-- Bootstrap JS -->
+    <!-- 1. jQuery, 2. Popper.js, 3. Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

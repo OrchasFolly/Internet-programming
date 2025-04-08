@@ -1,0 +1,33 @@
+{
+  "name": "trabalho-final---db",
+  "version": "1.0.0",
+  "description": "Trabalho Final de Programacao para Internet",
+  "main": "index2.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index2",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrchasFolly"
+  },
+  "keywords": [
+    "API",
+    "Backend",
+    "Fullstack",
+    "MVC",
+    "REST"
+  ],
+  "author": "Roberto Komuro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrchasFolly/2.-Programacao-para-Internet-Backend/issues"
+  },
+  "homepage": "https://github.com/OrchasFolly/2.-Programacao-para-Internet-Backend#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mysql2": "^3.12.0"
+  }
+}

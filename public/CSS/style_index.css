@@ -93,6 +93,7 @@
 .form-width {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 .margin-align {
     margin-top: 10px;
@@ -113,9 +114,12 @@
     position: sticky;
     top: -1px;
 }
+.table tr {
+    scroll-snap-align: start;
+}
 .tabScroll {
    height: 540px;
-   width: 330px;
+   width: 320px;
    overflow-y: auto;
 }
 /* login - html */

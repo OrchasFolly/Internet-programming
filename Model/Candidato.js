@@ -110,8 +110,8 @@ export default class Candidato {
         return await candDB.consultar(this);
     }
 
-    async consultarPeloCPF(numero){
+    async consultarPelaChave(numero){
         const candDB = new CandidatoDB();
-        return await candDB.consultarPeloCPF(numero);
+        return await candDB.consultarPelaChave(numero);
     }
 }

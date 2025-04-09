@@ -66,8 +66,8 @@ export default class Partido {
         return await partDB.consultar(this);
     }
 
-    async consultarPeloCPF(numeroP){
+    async consultarPelaChave(numeroP){
         const partDB = new PartidoDB();
-        return await partDB.consultarPeloCPF(numeroP);
+        return await partDB.consultarPelaChave(numeroP);
     }
 }

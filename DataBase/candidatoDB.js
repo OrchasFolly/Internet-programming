@@ -97,7 +97,7 @@ export default class CandidatoDB{
         return listaClientes;
     }
     
-    async consultarPeloCPF(numero){
+    async consultarPelaChave(numero){
         const conexao = await conectar();
         const sql = `SELECT * FROM candidato WHERE numero = ?`;
         const [registros, campos] = await conexao.execute(sql, [numero]);

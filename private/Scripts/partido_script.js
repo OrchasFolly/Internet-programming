@@ -8,6 +8,7 @@ function manipularForm(evento){
     }
     else{
         cadastrando();
+        atualizando();
         formCadastro.reset();
         exibindoTabela();
     }
@@ -140,9 +141,9 @@ function exibindoTabela(numeroPGET = ""){
                 for (let i = 0; i < clientes.length; i++){
                     const linha = document.createElement("tr");
                     linha.innerHTML = `
-                        <td>${clientes[i].numeroP}</td>
-                        <td>${clientes[i].nomePartido}</td>
-                        <td>${clientes[i].sigla}</td>
+                        <td style="background-color: aliceblue;">${clientes[i].numeroP}</td>
+                        <td style="background-color: aliceblue;">${clientes[i].nomePartido}</td>
+                        <td style="background-color: aliceblue;">${clientes[i].sigla}</td>
                         <td>
                             <button style="width:60px" class="btn btn-sm btn-warning" onclick="btnPegarDados(
                             '${clientes[i].numeroP}',

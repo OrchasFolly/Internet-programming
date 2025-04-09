@@ -8,6 +8,7 @@ function manipularForm(evento){
     }
     else{
         cadastrando();
+        atualizando();
         formCadastro.reset();
         exibindoTabela();
     }

@@ -12,7 +12,7 @@ export default class CandidatoControl{
             const titulo = dados.titulo;
             const partido = dados.partido;
             const uf = dados.uf;
-            const cidade = dados.endereco;
+            const cidade = dados.cidade;
             const endereco = dados.endereco;
 
             if(numero && nome && titulo && partido && uf && cidade && endereco){
@@ -55,7 +55,7 @@ export default class CandidatoControl{
             const titulo = dados.titulo;
             const partido = dados.partido;
             const uf = dados.uf;
-            const cidade = dados.endereco;
+            const cidade = dados.cidade;
             const endereco = dados.endereco;
 
             if(numero && nome && titulo && partido && uf && cidade && endereco){
@@ -132,7 +132,7 @@ export default class CandidatoControl{
             const cliente = new Candidato();
 
             if (requisicao.params.numero){
-                cliente.consultarPeloCPF(requisicao.params.numero).then((listaClientes) => {
+                cliente.consultarPelaChave(requisicao.params.numero).then((listaClientes) => {
                         resposta.status(200).json(
                             {
                                 "status": true,

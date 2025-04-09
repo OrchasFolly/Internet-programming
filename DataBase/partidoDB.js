@@ -81,7 +81,7 @@ export default class PartidoDB{
         return listaClientes;
     }
     
-    async consultarPeloCPF(numeroP){
+    async consultarPelaChave(numeroP){
         const conexao = await conectar();
         const sql = `SELECT * FROM partido WHERE numeroP = ?`;
         const [registros, campos] = await conexao.execute(sql, [numeroP]);

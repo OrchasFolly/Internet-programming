@@ -124,7 +124,7 @@ export default class PartidoControl{
             const cliente = new Partido();
 
             if (requisicao.params.numeroP){
-                cliente.consultarPeloCPF(requisicao.params.numeroP).then((listaClientes) => {
+                cliente.consultarPelaChave(requisicao.params.numeroP).then((listaClientes) => {
                         resposta.status(200).json(
                             {
                                 "status": true,

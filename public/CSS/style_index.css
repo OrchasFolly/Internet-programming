@@ -114,6 +114,9 @@
     position: sticky;
     top: -1px;
 }
+.table {
+    width: (400px, 800px);
+}
 .table tr {
     scroll-snap-align: start;
 }
@@ -121,7 +124,9 @@
    height: 540px;
    width: 320px;
    overflow-y: auto;
+   scroll-snap-type: y mandatory;
 }
+
 /* login - html */
 .loginsection {
     display: flex;

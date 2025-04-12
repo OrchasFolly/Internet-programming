@@ -2,26 +2,35 @@
     margin: 0px;
     padding: 0px;
 }
-.base {
-    height: 100%;
+
+:root {
+    --lightBlue: #4D5D8D;
+    --lightBlue2: #D0D9E0;
+    --lightBlue3: #A1BFFA;
+    --darkBlue: #313A57;
+    --darkBlue2: #1B2936;
+    --footerColor: #23252B;
+    --footerColor2: #131416;
+    --loginColor: #3F4F5E;
+    --loginColor2: #979CA7;
+    --white: #FFFFFF;
 }
+
 /* Header */
 .webheader {
-    background-color:rgb(77, 93, 141);
-    border-bottom: 10px solid rgb(49, 58, 87);
+    background-color: var(--lightBlue);
+    border-bottom: 10px solid var(--darkBlue);
     height: 25vh;
 }
 .descH {
-    height: 100%;
-    width: 100%;
+    height: 50%;
 }
 .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    color: var(--white);
     height: 100%;
-    color: white;
 }
 .login-logout {
     display: flex;
@@ -35,7 +44,7 @@
     margin: 5px;
 }
 .btn-login-logout-return {
-    color: white;
+    color: var(--white);
     font-size: larger;
     font-weight: bold;
 }
@@ -50,8 +59,7 @@
 .descS1 {
     display: flex;
     justify-content: center;
-    background-color: #1B2936;
-    width: 100%;
+    background-color: var(--darkBlue2);
     height: 500px;
 }
 .col-align {
@@ -62,8 +70,8 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    color: white;
-    background-color: #1B2936;
+    color: var(--white);
+    background-color: var(--darkBlue2);
     width: 300px;
 }
 .btn-align {
@@ -82,7 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D0D9E0;
+    background-color: var(--lightBlue2);
 }
 .align-margin-form {
     display: flex;
@@ -110,7 +118,7 @@
     margin: 3px;
 }
 .table th {
-    background-color: #D0D9E0;
+    background-color: var(--lightBlue2);
     position: sticky;
     top: -1px;
 }
@@ -121,41 +129,38 @@
     scroll-snap-align: start;
 }
 .tabScroll {
-   height: 540px;
-   width: 320px;
    overflow-y: auto;
    scroll-snap-type: y mandatory;
+   height: 540px;
+   width: 320px;
 }
 
 /* login - html */
 .loginsection {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(#3F4F5E,#979CA7,#3F4F5E);
+    background-image: linear-gradient(var(--loginColor),var(--loginColor2),var(--loginColor));
     height: 100vh;
 }
 .descLogin {
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 100%;
 }
 .login-format {
     display: flex;
     flex-direction: column;
-    background-color:white;
+    background-color: var(--white);
     border-radius: 30px;
-    height: 100%;
     width: 350px;
+    min-width: 200px;
     padding: 20px;
-    margin: 30px;
 }
 
 /* Footer */
 .webfooter {
     display: flex;
-    background-color: #23252B;
-    border-top: 10px solid #131416;
+    background-color: var(--footerColor);
+    border-top: 10px solid var(--footerColor2);
     height: 40vh;
 }
 .descF {
@@ -165,8 +170,8 @@
     width: 100%;
 }
 a:hover {
-    color: white;
+    color: var(--white);
 }
 .btn-details:hover {
-    color: #A1BFFA;
+    color: var(--lightBlue3);
 }

@@ -2,9 +2,9 @@
 ### Completado / Completed
 
 ## How to use?
-> just type `npm start` in the terminal / Apenas digite `npm start` no terminal
+just type `npm start` in the terminal / Apenas digite `npm start` no terminal
 <br/>
 
-## Linkdin / Perfil
-    [Click here](https://www.linkedin.com/in/roberto-komuro-824912354/)
+## Links
+Linkdin / Perfil: [Click here](https://www.linkedin.com/in/roberto-komuro-824912354/)
 ## Unoeste - FIPP

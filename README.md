@@ -1,11 +1,19 @@
 # Final work on "Internet programming"
-<p>This is my final work at university. It shows an example of an API with MVC and REST architecture on the web.</p>
-
+### This is my final work at university. It shows an example of an API with MVC and REST architecture on the web.
 ### Status: Completed
+### Atention: You need to connect to the MySQL database. Go to the “DataBase” folder in “conexao.js” and put in your presets.
 
 ## How to use?
-just type in the terminal
+Just type in the terminal:
+<br/>
+
 `npm start`
+<br/>
+
+To download all dependencies:
+<br/>
+
+`npm i`
 <br/>
 
 ## Links

@@ -1,11 +1,10 @@
-<h1> Final work on "internet programming" </h1>
-<p>teste</P>
-<span style="color: green"> Status: Completed </span>
+# Final work on "Internet programming"
+### ```diff + Status: Completed```
 
-<h3> How to use? </h3>
-<p> just type `npm start` in the terminal </p>
+## How to use?
+just type `npm start` in the terminal
 <br/>
 
-<h3> Links </h3>
+## Links
 My Linkdin: [Click here](https://www.linkedin.com/in/roberto-komuro-824912354/)
-<span> Unoeste - FIPP </span>
+## Unoeste - FIPP

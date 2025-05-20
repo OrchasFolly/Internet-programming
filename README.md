@@ -1,5 +1,7 @@
 # Final work on "Internet programming"
-### ```diff + Status: Completed```
+```diff
++ Status: Completed
+```
 
 ## How to use?
 just type `npm start` in the terminal
